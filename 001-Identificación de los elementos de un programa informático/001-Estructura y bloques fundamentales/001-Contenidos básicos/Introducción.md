@@ -6,6 +6,11 @@
 4. Funciones y/o clases del programa
 5. La función principal - que es la que pone en marcha el programa
 
+Ejemplo:
+```
+Programa
+```
+
 El Zen de Python:
 https://peps.python.org/pep-0020/
 - Beautiful is better than ugly.
