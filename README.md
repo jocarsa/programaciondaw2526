@@ -32,4 +32,14 @@ https://github.com/jocarsa/documentos/blob/main/R%C3%BAbrica%20de%20evaluaci%C3%
 # Buenas prácticas en la programación
 https://github.com/jocarsa/documentos/blob/main/Buenas%20pr%C3%A1cticas%20en%20programaci%C3%B3n.md
 
+# IA
+Vivimos en la era de la IA
+Las empresas usan la IA
+Nosotros os tenemos que formar en esas herramientas
+En esta clase está permitido el uso de la IA para apoyaros para ayudaros
+No está permitido para cometer fraude
+
+
+
+
 
