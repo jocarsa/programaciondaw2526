@@ -8,7 +8,20 @@
 
 Ejemplo:
 ```
-Programa
+# Programa de prueba
+# Versión 1.0 por Jose Vicente Carratala
+# Este programa es ficticio
+
+import os # Esta librería importa comandos del sistema
+
+NOMBRE = "Jose Vicente"
+EDAD = 47
+
+def saluda(NOMBRE):
+  print("Hola",NOMBRE)
+
+def __main__():
+  saluda(NOMBRE)
 ```
 
 El Zen de Python:
