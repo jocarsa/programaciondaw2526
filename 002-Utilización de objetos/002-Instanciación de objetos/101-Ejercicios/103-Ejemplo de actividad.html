@@ -1,0 +1,18 @@
+<script>
+  /*
+    Programa objetos deportivos
+    v0.1 Jose Vicente Carratala
+    Programa que usa la librería de fechas y la librería matemática
+  */
+
+  var fecha;
+  var puntuacion;
+
+  fecha = new Date("2025-09-13 21:00:00");
+  console.log(fecha);
+  puntuacion = Math.random();
+  console.log(puntuacion*10)
+  
+  console.log("El partido comenzó el día",fecha.getFullYear(),fecha.getMonth()+1,fecha.getDate()," a las ",fecha.getHours(),fecha.getMinutes(),fecha.getSeconds());
+  console.log("El jugador ha conseguido",puntuacion*10,"puntos")
+</script>
