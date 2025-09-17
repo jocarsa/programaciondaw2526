@@ -1,0 +1,23 @@
+<script>
+  // camelCase
+  // Primero un verbo, y luego el objeto directo
+  function calculaMatematicas(operacion,operando1,operando2){ 
+    var resultado;
+    if(operacion == "suma"){
+      resultado = operando1 + operando2;
+    }else if(operacion == "resta"){
+      resultado = operando1 - operando2;
+    }else if(operacion == "multiplicacion"){
+      resultado = operando1 * operando2;
+    }else if(operacion == "division"){
+      resultado = operando1 / operando2;
+    }else{
+      resultado = 0;
+    }
+    return resultado;
+  }
+  
+  console.log(calculaMatematicas("suma",4,3));
+
+  
+</script>

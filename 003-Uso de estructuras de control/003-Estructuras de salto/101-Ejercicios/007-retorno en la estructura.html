@@ -1,0 +1,23 @@
+<script>
+  // camelCase
+  // Primero un verbo, y luego el objeto directo
+  function calculaMatematicas(operacion,operando1,operando2){ 
+    if(operacion == "suma"){
+       return operando1 + operando2;
+    }else if(operacion == "resta"){
+       return operando1 - operando2;
+    }else if(operacion == "multiplicacion"){
+      return operando1 * operando2;
+    }else if(operacion == "division"){
+      return operando1 / operando2;
+    }else{
+      return false;
+    }
+  }
+  var op1 = prompt("Introduce el operando 1:")
+  var op2 = prompt("Introduce el operando 2:")
+  var op = prompt("Introduce la operación (suma, resta, multiplicacion, division):")
+  console.log(calculaMatematicas(op,op1*1,op2*1));
+
+  
+</script>

@@ -1,0 +1,42 @@
+<script>
+  /*
+    Programa de gestión de recursos inf
+    v0.1 Jose Vicente Carratalá
+    Este programa escala tus recursos inf
+  */
+  
+  // No hay librerías que importar
+  
+  // Declaración de variables globales
+  var memoria_ram = 8;
+  
+  // Declaración de clases y funciones
+  
+  function escalarRecursos(op,o1,o2){
+    if(op == "aumentar"){
+      return o1*1+o2*1;             // Uso el truco sucio de la conversión implícita
+    }else if(op == "reducir"){
+      return o1-o2;
+    }else if(op == "escalar"){
+      return o1*o2;
+    }else if(op == "optimizar"){
+      return o1/o2;
+    }
+  }
+  
+  // Función principal
+    
+    // Introducción de datos
+      var operacion = prompt("Introduce la operación que deseas realizar (aumentar,reduciro,escalar,optimizar)");
+      var parametro = prompt("Introduce el factor a aplicar");
+    
+    // Realización de cálculos
+    var resultado = escalarRecursos(
+                                      operacion,
+                                      memoria_ram,
+                                      parametro
+                                    )
+    // Ofrecimiento de resultados
+    document.write(resultado);
+  
+</script>
