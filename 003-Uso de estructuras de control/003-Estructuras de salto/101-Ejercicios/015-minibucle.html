@@ -1,0 +1,28 @@
+<script>
+  for(let tirada = 1;tirada < 20;tirada++){
+    document.write("<br><br>Voy a hacer una tirada<br>")
+    // Decido para quien es el punto
+    var paraequipo = Math.random()
+    if(paraequipo < 0.5){
+      document.write("La jugada se la lleva el equipo 1<br>")
+      var cuantospuntos = Math.random()
+      if(cuantospuntos < 0.3){
+        document.write("Marco un punto")
+      }else if(cuantospuntos >= 0.3 && cuantospuntos < 0.6){
+        document.write("Marco dos puntos")
+      }else if(cuantospuntos >= 0.6){
+        document.write("Marco tres puntos")
+      }
+    }else{
+      document.write("La jugada se la lleva el equipo 2<br>")
+      var cuantospuntos = Math.random()
+      if(cuantospuntos < 0.3){
+        document.write("Marco un punto")
+      }else if(cuantospuntos >= 0.3 && cuantospuntos < 0.6){
+        document.write("Marco dos puntos")
+      }else if(cuantospuntos >= 0.6){
+        document.write("Marco tres puntos")
+      }
+    }
+  }
+</script>
