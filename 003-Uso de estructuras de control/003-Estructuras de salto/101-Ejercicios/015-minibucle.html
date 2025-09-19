@@ -1,8 +1,7 @@
 <script>
-  for(let tirada = 1;tirada < 20;tirada++){
-    document.write("<br><br>Voy a hacer una tirada<br>")
-    // Decido para quien es el punto
-    var paraequipo = Math.random()
+  for(let tirada = 1;tirada < 20;tirada++){                   // Repite algo varias veces, en este caso parece que hace 20 tiradas
+    document.write("<br><br>Voy a hacer una tirada<br>")      // Saco  un mensaje por pantalla
+    var paraequipo = Math.random()                            // Creo un numero aleatorio entre 0 y 1 para decidir para quien va el punto
     if(paraequipo < 0.5){
       document.write("La jugada se la lleva el equipo 1<br>")
       var cuantospuntos = Math.random()
@@ -15,7 +14,7 @@
       }
     }else{
       document.write("La jugada se la lleva el equipo 2<br>")
-      var cuantospuntos = Math.random()
+      var cuantospuntos = Math.random()                       // Creo un número aleatorio entre 0 y 1, y lo quiero partir en tres partes
       if(cuantospuntos < 0.3){
         document.write("Marco un punto")
       }else if(cuantospuntos >= 0.3 && cuantospuntos < 0.6){

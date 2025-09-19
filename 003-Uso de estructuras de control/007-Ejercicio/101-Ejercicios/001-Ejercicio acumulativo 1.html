@@ -1,0 +1,83 @@
+Ejercicio propuesto: “Cronista de una línea temporal”
+
+Descripción:
+Vas a crear un pequeño “cronista” que, dado un rango de años, clasifique cada año en una etapa histórica y muestre un breve resumen por pantalla. Practicarás variables, entrada de datos, estructuras de selección, bucles, funciones y uso básico de Date/Math.
+
+Requisitos
+
+Entradas (con prompt):
+
+Año de inicio (anio_inicio) y año de fin (anio_fin).
+
+Opcional: nombre del cronista (para el encabezado).
+
+Validaciones simples (con if/else):
+
+Si anio_inicio es mayor que anio_fin, intercámbialos o muestra un mensaje de aviso y termina.
+
+Función de clasificación:
+
+Crea una función clasificaPeriodo(anio) que devuelva un texto con la etapa histórica, por ejemplo:
+
+< 0 → “Antes de nuestra era”
+
+0–499 → “Antigüedad tardía”
+
+500–1499 → “Edad Media”
+
+1500–1789 → “Edad Moderna”
+
+1790–1945 → “Contemporánea (siglos XIX–XX)”
+
+>= 1946 → “Contemporánea reciente”
+
+(Los rangos son orientativos; puedes afinarlos si lo deseas.)
+
+Determinación de siglo (con switch):
+
+Crea una función nombreSiglo(anio) que devuelva el nombre del siglo (por ejemplo, “Siglo XV”).
+
+Sugerencia: calcula el siglo con aritmética y usa switch para algunos casos representativos (p. ej., XV, XVI, XIX, XX, XXI) y un default para el resto.
+
+Bucle principal (con for):
+
+Recorre cada año desde anio_inicio hasta anio_fin.
+
+Para cada año:
+
+Calcula su siglo y su etapa histórica usando tus funciones.
+
+Muestra una línea con el formato:
+
+Año 1492 — Siglo XV — Edad Moderna
+
+
+Para no saturar, puedes mostrar solo los años “clave” (p. ej., cada 50 años) o todos (a tu elección).
+
+Uso básico de Date y Math:
+
+Obtén la fecha actual con new Date() y muestra un encabezado tipo:
+
+Informe generado el 19/09/2025 por <nombre_cronista>
+
+
+Usa Math.floor/Math.ceil donde lo necesites (por ejemplo, cálculo del siglo).
+
+Resumen final:
+
+Muestra un pequeño resumen con contadores (variables numéricas) de cuántos años han caído en cada etapa (ej.: cuántos de Edad Media, cuántos de Edad Moderna, etc.).
+
+Salida esperada (ejemplo orientativo)
+Informe generado el 19/09/2025 por Ana
+Rango analizado: 1200–1700
+
+Año 1200 — Siglo XII — Edad Media
+Año 1250 — Siglo XIII — Edad Media
+...
+Año 1500 — Siglo XV — Edad Moderna
+...
+Resumen:
+Edad Media: 7 años
+Edad Moderna: 5 años
+Contemporánea (siglos XIX–XX): 0 años
+Contemporánea reciente: 0 años
